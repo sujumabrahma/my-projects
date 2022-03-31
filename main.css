@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:ital,wght@0,400;0,700;1,100&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+  padding: 1em;
+  margin: 0 5em;
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .navbar .brand-logo {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.container .navbar .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar .search-bar input {
+  padding: 0.5em;
+  padding-right: 3em;
+  width: 30em;
+}
+
+.container .navbar .search-bar i {
+  margin-left: -1.5em;
+}
+
+.container .navbar .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar .profile-info .profile-image img {
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+}
+
+.container .navbar .profile-info .profile-name {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+.container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.container .hero .center-hero {
+  height: 100vh;
+  width: 30em;
+  background-color: grey;
+  margin: 0 1em;
+  margin-left: 20%;
+}
+
+.container .hero .side-hero {
+  height: 80vh;
+  width: 26em;
+  background-color: grey;
+  margin-left: 5em;
+}
+
+@media (max-width: 980px) {
+  .container .navbar .brand-logo {
+    font-size: 22px;
+  }
+  .container .navbar .nav-container {
+    width: 50vw;
+  }
+  .container .navbar .nav-container .search-bar input {
+    padding: 0.5em;
+    padding-right: 3em;
+    width: 15em;
+    margin-left: 1.5em;
+  }
+  .container .navbar .nav-container .profile-info {
+    margin-left: 0em;
+  }
+  .container .navbar .nav-container .profile-info .profile-image img {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+  }
+  .container .hero .center-hero {
+    margin-left: 5%;
+  }
+  .container .hero .side-hero {
+    margin-left: 0em;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 1em;
+    margin: 0em;
+  }
+  .container .navbar .brand-logo {
+    font-size: 22px;
+  }
+  .container .navbar .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .container .navbar .nav-container .search-bar {
+    display: none;
+  }
+  .container .navbar .nav-container .profile-info .profile-image img {
+    margin-top: 0.5em;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+  }
+  .container .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .hero .center-hero {
+    margin: 0% auto;
+    width: 95%;
+  }
+  .container .hero .side-hero {
+    margin: 0 auto;
+    margin-top: 0.5em;
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-info .profile-name {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
